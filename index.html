@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Brandon Renos Website</title>
+    <script src="Interactivity.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="HoverImage()">
     <div class="container">
         <div class="navigationContainer">
             <div class="left">
@@ -28,13 +29,13 @@
 
             <div class="right">
                 <div class="nameStyle">
-                    <div>Brandon Reno</div>
+                    <div id = "NameChange">Brandon Reno</div>
                         <div class = Name style="font-size: .3em; font-style: italic;">Software Engineer, Animator, Artificial Intelligence</div>
                 </div>
             </div>
         </div>
         <div class="content">
-            <div class="portfolioItems">
+            <div class="portfolioItems ">
                 <div class="portfolioItem">
                     <div class="portfolioItemBackground" style="background-image: url(Images/Pacific.jpg);"></div>
                     <div class="imagetext">
@@ -111,19 +112,5 @@
         </div>
     </div>
 </body>
-<script>
-    const AllItems = document.querySelectorAll('.portfolioItem')
 
-    AllItems.forEach(Item=>{
-        Item.addEventListener('mouseover', () => {
-            Item.childNodes[1].classList.add('Darken');
-        })
-    })
-
-    AllItems.forEach(Item=>{
-        Item.addEventListener('mouseout', () => {
-            Item.childNodes[1].classList.remove('Darken');
-        })
-    })
-</script>
 </html>
