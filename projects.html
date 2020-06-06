@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brandon Renos Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigationContainer">
+            <div class="left">
+                <div class="navlink">
+                    <a href="index.html">Home</a>
+                 </div>
+                 <div class="navlink">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="navlink">
+                    <a href="resume.html">Resume</a>
+                </div>
+                <div class="navlink">
+                    <a href="projects.html">Projects</a>
+                </div>
+                <div class="navlink">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div> 
+
+            <div class="right">
+                <div class="nameStyle">
+                    <div>Brandon Reno</div>
+                        <div class = Name style="font-size: .3em; font-style: italic;">Software Engineer, Animator, Artificial Intelligence</div>
+                </div>
+            </div>
+        </div>
+        <div class="ProjectContainer">
+            <h1 style="text-align: center; color:#7392E7;">Notable Projects</h1>
+            <div class="Projects">
+                <div class="projectItem">
+                    <h3 style="color:#7392E7;">Trace</h3>
+                    <div class="projectDescription">
+                        <p>On a team of three in my software engineering course our team using Python
+                            created an application that tracks your credit card payments and organizes them 
+                            in a way that gives the user the best way to pay them off with their current budget.
+                            For this project I was in charge of creating all UI elements using Kivy. This consisted of creating the UI and then connecting
+                            it to base classes that had certain methods each UI class had to access. Another one of my responsibilities was finding a way
+                            to safely store users account information. I did this by using Pickle in Python and saving to a local text file. I was also in charge 
+                            of creating a so to speak User Database in which houses all of the users usernames and hashed passwords so that the system can validate which 
+                            usernames and passwords have been used and which are available when creating a new user. The most difficult part of this project for me was
+                            creating the dynamic calendar(figure 3). The calendar widget in Kivy did not work for Python 3 so I was stuck having to create one from scratch using
+                            stack layout and buttons. It turned out much better than the actual calendar widget would have been and I am extremley proud of the overall product.
+                            Future work on this project could be connecting to a banking API so that you could have flexibility to make payments while on the app. Other future work
+                            would be connecting to a database instead of pickling the account information storing it in a database for added security and flexibility.
+                        </p>
+                    </div>
+                </div>
+                <div class="projectImages">
+                    <div class="Image">
+                        <img src="Trace1.jpg" alt="">
+                    </div>
+                    <div class="Image">
+                        <img src="Trace2.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="projectImages">
+                    <div class="Image">
+                        <img src="AI1.jpg" alt="">
+                    </div>
+                    <div class="Image">
+                        <img src="AI2.jpg" alt="">
+                    </div>
+
+                </div>
+                <div class="projectItem">
+                    <h3 style="color:#7392E7;">Smart Color Picker</h3>
+                    <div class="projectDescription">
+                        <p>Individually in Python for my Artificial Intelligence and Machine Learning class I developed a system that learns colors based off or RGB values. 
+                            Initially the system reads in training data into a neural network and runs through that data x number of times. It then spits out the weights that 
+                            gave the best accuracy for guessing the color. Those weights are then stored along with the accuracy as its own item. The system then repeats this process x number of times
+                            outputting weights and accuracy each time to the arrary that in the end carries the most accurate weights and their accuracy as a percentage. From here these values are put into a genetic
+                            algorithim in which the weights and accuracies perform crossover and an optional mutation to find the optimal set of weights for the best color picking accuracy. Once this is picked the test data is used
+                            to test the actual accuracy. In situations using just the neural network compared to also using the genetic algorithim, 100% of the time the NN and GA perform more accurately.
+                            These results are then outputted to a bar graph showing the percent guessed correct for each color and then the overall percentage.
+                        </p>
+                    </div>
+                </div>
+                <div class="projectItem">
+                    <h3 style="color:#7392E7;">Great Barrier Reef Reimagined</h3>
+                    <div class="projectDescription">
+                        <p>Individually for my senior capstone I created a 3d timelapse animation of the effects coral bleaching has had on the great barrier reef From
+                            1950 to present day. I used Indiegogo to crowd fund and raised 500$ which was put towards modeled wildlife that resided in the reef.
+                            I had to do this instead of modeling all the wildlife because of the large number of species I wanted to include. With the wildlife in the scene I was then prompted
+                            with creating an underwater ocean enviornment in Maya that could be seen as a part of the great barrier reef. I did research to see some major monuments in the 
+                            reef and using these as refrences began modling my scene. I used sculpting tools in Maya to model terrain and used various arnold filters to give my scene the underwater look. 
+                            With this done I then animated my wildlife around the terrain and the basis of my project was done. I did this three more times each time effecting the wildlife and terrain as coral bleaching would effect them. To present this I had rented a projector room with a projector on each wall. The purpose was to have 
+                            this experience be immersive, with four different angles showing four different sides of the ocean. A viewer would see a fish swim screen to screen almost as in like a virtual aquarium.
+                            I set up four cameras in maya all looking at a different 90 degree angle, rendered the clips and then projected them on their noted projectors.
+                        </p>
+                    </div>
+                </div>
+                <div class="projectImages">
+                    <div class="Image">
+                        <img src="GBRPic.png">
+                    </div>
+                    <div class="Image">
+                        <img src="GBRPic2.png">
+                    </div>
+                </div>
+                <div class="projectImages">
+                    <div class="Image">
+                        <img src="SwimApp1.JPG">
+                    </div>
+                    <div class="Image">
+                        <img src="SwimApp2.JPG" alt="">
+                    </div>
+                </div>
+                <div class="projectItem">
+                    <h3 style="color:#7392E7;">Swimming Time Converter with KNN</h3>
+                    <div class="projectDescription">
+                        <p>Individually as a personal project using Python I created a time conversion tool for swimmers that converts their times from
+                            shortcourse yards to longcourse meters by the use of KNN. Traditionally swimming conversion tools are incredibly inaccurate because they are run from
+                            a formula. There is no data that goes into it but just a formula that decides what the converted time is and because of this the times are often far off of
+                            what an athlete could actually go. I solved this problem by using KNN. By using this, real world data is pulled from USA Swimming for both shortcourse and longcourse times of each event.
+                            I then go through the data  and match names of athletes and pair their shortcourse and longcourse time. Once this is done the KNN is ready to go and upon entering your time will spit out your converted time.
+                            Using on people on my swim team it is much closer to their actual longcourse times than the traditional converters are. I used tkinter to make a GUI so that the program could be run easily by anyone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

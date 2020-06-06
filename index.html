@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brandon Renos Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigationContainer">
+            <div class="left">
+                <div class="navlink">
+                    <a href="index.html">Home</a>
+                 </div>
+                 <div class="navlink">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="navlink">
+                    <a href="resume.html">Resume</a>
+                </div>
+                <div class="navlink">
+                    <a href="projects.html">Projects</a>
+                </div>
+                <div class="navlink">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div> 
+
+            <div class="right">
+                <div class="nameStyle">
+                    <div>Brandon Reno</div>
+                        <div class = Name style="font-size: .3em; font-style: italic;">Software Engineer, Animator, Artificial Intelligence</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="portfolioItems">
+                <div class="portfolioItem">
+                    <div class="portfolioItemBackground" style="background-image: url(Images/Pacific.jpg);"></div>
+                    <div class="imagetext">
+                        <div class="logo">
+                            <img src="Images/AnimatedIcon.png">
+                        </div>
+                        <div class="subtitle">
+                            My undergraduate degree focused on a combination of computer science and modeling in Maya.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolioItem">
+                    <div class="portfolioItemBackground" style="background-image: url(Images/Coding.jpg);"></div>
+                    <div class="imagetext">
+                        <div class="logo">
+                            <img src="Images/CodingIcon.png">
+                        </div>
+                        <div class="subtitle">
+                           I am currently enrolled for the fall of 2020 at University of The Pacific to get my masters in Engineering sciences with a focus in computer science.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolioItem">
+                    <div class="portfolioItemBackground" style="background-image: url(Image/AI.jpg);"></div>
+                    <div class="imagetext">
+                        <div class="logo">
+                            <img src="Image/Aiico.png">
+                        </div>
+                        <div class="subtitle">
+                            I highly enjoy automating tasks with ML and AI algorithims.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolioItem">
+                    <div class="portfolioItemBackground" style="background-image: url(Image/Swimming.jpg);"></div>
+                    <div class="imagetext">
+                        <div class="logo">
+                            <img src="Image/swimlogo.png">
+                        </div>
+                        <div class="subtitle">
+                            I am a competitive swimmer who led my college team as team captain for the past two years.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolioItem">
+                    <div class="portfolioItemBackground" style="background-image: url(Image/GBR.jpg);"></div>
+                    <div class="imagetext">
+                        <div class="logo">
+                            <img src="Image/Snorkel.png">
+                        </div>
+                        <div class="subtitle">
+                            I am an ocean activist and for my senior project I created an animated timelapse of the great barrier reef modeled completly in Maya.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolioItem">
+                    <div class="portfolioItemBackground" style="background-image: url(Image/Work.jpg);"></div>
+                    <div class="imagetext">
+                        <div class="logo">
+                            <img src="Image/Worklogo.png">
+                        </div>
+                        <div class="subtitle">
+                            I am currently looking for work!
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const AllItems = document.querySelectorAll('.portfolioItem')
+
+    AllItems.forEach(Item=>{
+        Item.addEventListener('mouseover', () => {
+            Item.childNodes[1].classList.add('Darken');
+        })
+    })
+
+    AllItems.forEach(Item=>{
+        Item.addEventListener('mouseout', () => {
+            Item.childNodes[1].classList.remove('Darken');
+        })
+    })
+</script>
+</html>
