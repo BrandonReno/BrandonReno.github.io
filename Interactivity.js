@@ -16,4 +16,6 @@ function HoverImage(){
 
 function ColorChange(){
     const NameChanger = document.getElementById("NameChange")
+
+    NameChanger.style.color = "LightBlue"
 }
