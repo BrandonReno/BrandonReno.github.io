@@ -1,0 +1,57 @@
+/* Index*/
+
+#Header {
+    position: absolute;
+    text-align: center;
+    top:50px;
+    width:100%;
+    transition: opacity .5s;
+}
+
+#Header h1{
+    text-shadow: 3px 3px 7px rgb(73, 96, 110);
+	color: #222;
+	font: 80px 'LeagueGothicRegular';
+}
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    top: 200px;
+    width: 1008px; 
+    height: 720px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#IndContent{
+    position: absolute;
+    top:1000px;
+    width: 100%;
+}
+
+#IndContent h1{
+    text-align: center;
+    font: 80px 'Times New Roman'
+}
+
+#IndContent p{
+    text-align: justify;
+    font-size: 20px;
+    margin-right: 155px;
+    margin-left: 155px;
+}
+
+
+
+
+
+

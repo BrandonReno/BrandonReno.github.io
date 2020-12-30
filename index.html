@@ -3,114 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Brandon Renos Website</title>
-    <script src="Interactivity.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="MainStyle.css">
+    <link rel="stylesheet" href="HomeStyle.css">
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+  
 </head>
-<body onload="HoverImage(); ColorChange();">
-    <div class="container">
-        <div class="navigationContainer">
-            <div class="left">
-                <div class="navlink">
-                    <a href="index.html">Home</a>
-                 </div>
-                 <div class="navlink">
-                    <a href="about.html">About</a>
-                </div>
-                <div class="navlink">
-                    <a href="resume.html">Resume</a>
-                </div>
-                <div class="navlink">
-                    <a href="projects.html">Projects</a>
-                </div>
-                <div class="navlink">
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div> 
+<body>
+    <div id="NavBar">
+        <p>B_reno@u.pacific.edu</p>
+        <a href="index.html">Home</a>
+        <a class = "about" href="about.html"> About</a>
+        <a class = "resume" href="resume.html"> Resume</a>
+        <a class = "proj" href="projects.html"> Projects</a>
+    </div>
 
-            <div class="right">
-                <div class="nameStyle">
-                    <div id = "NameChange">Brandon Reno</div>
-                        <div class = Name style="font-size: .3em; font-style: italic;">Software Engineer, Animator, Artificial Intelligence</div>
-                </div>
-            </div>
+    <div id = Header>
+        <h1>Leader | Creative | Passionate</h1>
+    </div>
+
+    <div id="slideshow">
+        <div>
+            <img src="Images/BrandonRenoVR.jpg", width="1008", height="720">
         </div>
-        <div class="content">
-            <div class="portfolioItems ">
-                <div class="portfolioItem">
-                    <div class="portfolioItemBackground" style="background-image: url(Images/Pacific.jpg);"></div>
-                    <div class="imagetext">
-                        <div class="logo">
-                            <img src="Images/AnimatedIcon.png">
-                        </div>
-                        <div class="subtitle">
-                            My undergraduate degree focused on a combination of computer science and animation in Maya.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolioItem">
-                    <div class="portfolioItemBackground" style="background-image: url(Images/Coding.jpg);"></div>
-                    <div class="imagetext">
-                        <div class="logo">
-                            <img src="Images/CodingIcon.png">
-                        </div>
-                        <div class="subtitle">
-                           I am currently working towards my masters focused in computer science at University of the Pacific.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolioItem">
-                    <div class="portfolioItemBackground" style="background-image: url(Images/AI.jpg);"></div>
-                    <div class="imagetext">
-                        <div class="logo">
-                            <img src="Images/Aiico.png">
-                        </div>
-                        <div class="subtitle">
-                            I highly enjoy automating tasks with ML and AI algorithims.
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolioItem">
-                    <div class="portfolioItemBackground" style="background-image: url(Images/Swimming.jpg);"></div>
-                    <div class="imagetext">
-                        <div class="logo">
-                            <img src="Images/swimlogo.png">
-                        </div>
-                        <div class="subtitle">
-                            I am a competitive swimmer who led my college team as team captain for the past two years.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolioItem">
-                    <div class="portfolioItemBackground" style="background-image: url(Images/GBR.jpg);"></div>
-                    <div class="imagetext">
-                        <div class="logo">
-                            <img src="Images/Snorkel.png">
-                        </div>
-                        <div class="subtitle">
-                            I am an ocean activist and for my senior project I created an animated timelapse of the great barrier reef modeled completly in Maya.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolioItem">
-                    <div class="portfolioItemBackground" style="background-image: url(Images/Work.jpg);"></div>
-                    <div class="imagetext">
-                        <div class="logo">
-                            <img src="Images/Worklogo.png">
-                        </div>
-                        <div class="subtitle">
-                            I am currently looking for work!
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <img src="Images/contact.jpg", width="1008", height="720">
+        </div>
+        <div>
+            <img src="Images/Swim.jpg", width="1008", height="720">
+        </div>
+        <div>
+            <img src="Images/Slide5.jpg", width="1008", height="720">
+        </div>
+        <div>
+            <img src="Images/Slide6.jpg", width="1008", height="720">
         </div>
     </div>
-</body>
 
+    <div id = IndContent>
+        <h1>Welcome to my Website</h>
+        <p>
+            <span class="tab"></span> Hi! My name is Brandon Reno and I am currently a Computer Science graduate student at University of The Pacific. When applying for
+            jobs I often find it hard to express who I am as a person through just my resume or cover letter. There is so much more to
+            the best employees than just their qualifications for a position. To illustrate who I am as a person beyond my resume I created this site. <br>
+            <span class="tab"></span>Content on this site will focus on who I am as a person in hopes of introducing
+            myself in a personal light. My site is split up into three pages, About Me, Projects, and Resume. 
+            As could be assume the resume section is just a copy of my most current resume. This was included to re iterate myself
+            as a candidate to whoever is viewing this site. About me will give my story from a yung age up until the present.
+            This page will share traits that I feel define me, when they started shining and how they can transfer to the workforce.
+            Finally my project page will give an organized view on projects that I have created throughout my undergraduate and graduate years in university.
+            The purpose of this is to showcase projects that I am proud of in a deeper light. If you would like to contact me further please feel free
+            to reach out to my email written in the top right of the navigation bar.<br><br> <span class="tab"></span>With that being said I hope you enjoy learning more about myself outside of a resume view.
+            Also, feel free to connect with me on Linked In!
+        </p>
+        <a href="https://www.linkedin.com/in/brandonreno1/"><img src="Images/linkedin.png", height ="100", width="100"></a> 
+    </div>
+
+    
+  
+    <script type = "text/javascript" src="Interactivity.js"></script>
+</body>
 </html>
