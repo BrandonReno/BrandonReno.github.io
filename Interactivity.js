@@ -119,13 +119,13 @@ function updateContent(project){
     ProjBrief.textContent = "Time Conversion with KNN"
     ProjLink.setAttribute('href', 'https://github.com/BrandonReno/SwimmingConverter')
     projDesc.textContent = "As a swimmer you have two different times for each event. One time represents the shortcourse yards, SCY, time and the other is the long course meter, LCM, time. The Olypics are swam in LCM while college sanctioned events such as NCAA are swum in SCY. Some athletes are great SCY swimmers but not great at LCM due to the different amount of walls and longer distance of the events. A typical way to figure out what a LCM time is from a SCY time is to past the time into a formula which will add some numbers together and then output your LCM time. This is often not very accurate because it represents just a basic formula and not gathered data from other athletes. To address this shortcoming I create a machine learning solution to this problem using KNN. In python with Tkinter I develop a gui that uses data from USA swimming to predict a users LCM or SCY time based on their gender, event, and time. This way the results are based around data from other athletes and not just an outputted fomula result."
-    projImg.src = "Images/SwimApp2.jpg"
+    projImg.src = "Images/SwimApp2.JPG"
   }
   else if(project == "Color Optimizer."){
     ProjBrief.textContent = ("Color Learning with Neural Networks and Genetic Algorithims")
     ProjLink.setAttribute('href', 'https://github.com/BrandonReno/Color-Optimizer')
     projDesc.textContent = "In Python I developed a system that utilizes both a neural network and a genetic algorithim to learn colors based on RGB values. Initially this project was created with just the use of a nueral network which learned colors based on a training set of RGB values and then classified colors at an average percentage of 85%. I thought a way to expand this system would be to use a genetic algorithim to optimize to the best set of weights for the neural network and then test with the optimized weights. When my system runs it trains the neural network for X epochs and then outputs the best weights to my genetic algorithim. This repeates for X amount of 'generations' and then all of the weights in the genetic algorithim are optimized and the resulting optimized set are tested with the color test set. This expansion increased my accuracy to 96%, a high increase due to the optimization capabilities of the genetic algorithim. "
-    projImg.src = "Images/AI2.jpg"
+    projImg.src = "Images/AI2.JPG"
   }
   else if(project == "Escape Room."){
     ProjBrief.textContent = ("Mystery game consisting of multiple puzzles")
