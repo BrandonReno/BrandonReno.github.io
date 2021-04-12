@@ -140,6 +140,14 @@ function updateContent(project){
     projImg.src = "Images/Escape1.png"
     Imgcap.textContent = "Designed Insect Puzzle Wall in Game"
   }
+
+  else if(project == "Canny Edge."){
+    ProjBrief.textContent = ("Parallelizing Canny Edge algorithm")
+    ProjLink.setAttribute('href', 'https://bitbucket.org/breno1911/ecpe251_reno/src/master/') 
+    projDesc.textContent = "In this project I wrote a Canny Edge detector in C and then using OpenMP, OpenMP and MPI, as well as CUDA, parallelized the program. I began with using just OpenMP and using valgrind to find functions that were good canidates for parallelization. Once these functions were found I would place the pragmas and when testing against serial code I was able to get upwards of 7x speedup. I then took this program and added distributed memory parallelization with MPI. For this I would send each rank a chunk of the image and then that rank would initialize OpemMP threads to parallelize the rest of the calculations. I was matched with similar speedup maxing out at 8x. Finally I implemented the program once more in CUDA using a GPU cluster in which I was able to get a whopping 120x speedup on the largest image size of 10240. From this project I expanded my knowledge of development in C as well as gained exposure into the world of HPC with OpenMP, MPI, and CUDA."
+    projImg.src = "Images/Sigma1.1GPU.png"
+    Imgcap.textContent = "GPU vs Serial Speedup Chart for sigma 1.1"
+  }
 }
 
 
